@@ -187,3 +187,4 @@ carouselRunner(".carousel-diabetes");
 carouselRunner(".carousel-mens");
 carouselRunner(".carousel-rehab");
 carouselRunner(".carousel-womens");
+carouselRunner(".carousel-all");

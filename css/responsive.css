@@ -85,7 +85,63 @@
         display: none;
     }
 
+    /* Features */
+    .features-cont {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Kids Item */
+    .kids-cont {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* Order Products */
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* gap: 20px; */
+    }
+
+    /* .hero .text h2 {
+        margin: 80px auto -45px;
+    }
+*/
+    .hero .text h2,
+    .hero .text p {
+        text-align: center;
+    }
+
+    .hero .text .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero .text .input-group input {
+        width: auto;
+    }
+
+    .hero .text .input-group button {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .delivery-table {
+        grid-template-columns: 1fr;
+    }
+
     /* Footer */
+    .footer-top {
+        display: none;
+    }
+
     .footer {
         text-align: center;
     }
