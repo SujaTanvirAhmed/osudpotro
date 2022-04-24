@@ -250,12 +250,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    transition: ease-in 0.4s;
-}
-
-.mobile-menu-cont.menu-come {
-    transition: ease-in 0.4s;
-    right: 0;
+    transition: right ease-in .4s;
 }
 
 .mobile-menu-cont a {
