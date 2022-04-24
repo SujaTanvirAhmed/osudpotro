@@ -34,8 +34,8 @@ button {
     transition: ease-in 0.3s;
     text-align: center;
     margin-bottom: 80px;
-    margin-top: 130px;
-    font-size: 40px;
+    margin-top: 160px;
+    font-size: 35px;
     font-weight: 500;
 }
 
@@ -45,6 +45,63 @@ button {
 
 .header {
     width: 100vw;
+    /* background-color: #88E0EA; */
+}
+
+.top-bar-mini {
+    display: none;
+    background: #45BDAA;
+    padding: 12px 0;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.top-bar-mini .logo-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.ribbon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.ribbon-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+}
+
+.top-bar-mini .ribbon-right svg {
+    height: 25px;
+    fill: white;
+}
+
+.user-cont {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.top-bar-mini .ribbon-right .user-cont svg {
+    color: darkgray;
+    width: 25px;
+    height: 25px;
+}
+
+.top-bar-mini .logo-user .user-cont svg {
+    fill: gray;
+}
+
+.top-bar-mini .ribbon-left img {
+    height: 25px;
 }
 
 .top-bar {
@@ -75,6 +132,20 @@ button {
     border: 0;
     background-color: var(--color-white);
     min-width: 250px;
+}
+
+.top-bar-mini .search input {
+    width: 94%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.top-bar-mini .search svg {
+    left: 40px;
+    top: 28px;
+    position: absolute;
 }
 
 .user-action {
@@ -134,7 +205,7 @@ button {
 }
 
 .hamburger {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -252,7 +323,7 @@ button {
 .btn-cta {
     background: var(--color-red);
     color: var(--color-white);
-    padding: 15px 20px;
+    padding: 12px 15px;
     border: 0;
     border-radius: 30px;
     width: 128px;
@@ -281,7 +352,7 @@ button {
 }
 
 .product-type img {
-    height: 100px;
+    width: 100px;
 }
 
 .product-type p {
@@ -326,6 +397,7 @@ button {
 
 .medicine img {
     width: 80%;
+    align-self: center;
 }
 
 .medicine-title {
@@ -359,6 +431,13 @@ button {
     font-size: 12px;
 }
 
+
+/* Kids Item */
+.kids-cont {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
 
 /* View Category CTN */
 /* ----------------- */
@@ -401,6 +480,70 @@ button {
     letter-spacing: 2px;
 }
 
+
+/* Order Medicines */
+.order-medicines {
+    margin-top: 150px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero>img {
+    margin-left: 80px;
+}
+
+.hero .text h2,
+.hero .text p {
+    max-width: 400px;
+    text-align: left;
+}
+
+.hero .text input {
+    background: transparent;
+    width: 300px;
+    border: 0;
+    border-bottom: 2px solid #af9b9b;
+    outline: none;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.hero .text button {
+    background-color: var(--color-red);
+    color: white;
+    padding: 15px 55px;
+    border: 0;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.hero .text .mobile-apps {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.hero .text .mobile-apps img {
+    border-radius: 5px;
+}
+
+.at-a-glance {
+    margin-top: 50px;
+}
+
+.at-a-glance .best-selling p {
+    color: #45BDAA;
+}
+
+.at-a-glance .best-selling span {
+    font-weight: bold;
+    color: darkgray;
+}
+
 /* Footer */
 .footer-top {
     position: relative;
@@ -421,11 +564,9 @@ button {
     z-index: 1;
 }
 
-
-/* .footer a,
-.footer p {
-    font-size: 15px;
-} */
+.footer .footer-left img {
+    width: 150px;
+}
 
 .footer img {
     width: 65%;

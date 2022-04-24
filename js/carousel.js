@@ -3,6 +3,9 @@ window.onresize = () => {
     if (window.innerWidth <= 540) {
         carouselNumber = 3;
     }
+    else {
+        carouselNumber = 5;
+    }
 };
 
 function carouselRunner(carouselClassText) {
@@ -179,6 +182,7 @@ function carouselRunner(carouselClassText) {
     }
 }
 carouselRunner(".carousel-prescription");
+carouselRunner(".carousel-otc");
 carouselRunner(".carousel-diabetes");
 carouselRunner(".carousel-mens");
 carouselRunner(".carousel-rehab");
