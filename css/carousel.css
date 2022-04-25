@@ -18,6 +18,11 @@
     height: 100%;
 }
 
+.carousel-content-rehab,
+.carousel-content-women {
+    height: 110%;
+}
+
 .slide {
     height: 100%;
     position: absolute;

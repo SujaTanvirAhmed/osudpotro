@@ -188,3 +188,4 @@ carouselRunner(".carousel-mens");
 carouselRunner(".carousel-rehab");
 carouselRunner(".carousel-womens");
 carouselRunner(".carousel-all");
+carouselRunner(".carousel-kid");
